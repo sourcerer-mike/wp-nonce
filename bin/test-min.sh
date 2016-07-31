@@ -15,3 +15,5 @@ assert stat -c %a README.md
 
 # Assert WordPress coding standards (almost)
 assert vendor/bin/phpcs -v --standard=etc/phpcs.xml lib
+
+assert vendor/bin/phpunit -c etc/phpunit.xml

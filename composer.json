@@ -8,6 +8,8 @@
     }
   },
   "require-dev": {
+    "mockery/mockery": "~0.9",
+    "phpunit/phpunit": "~5",
     "wp-coding-standards/wpcs": "~0.9"
   }
 }

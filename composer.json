@@ -1,0 +1,5 @@
+{
+  "name": "sourcerer-mike/wp-nonce",
+  "description": "OOP solution for the wp_nonce_* functions.",
+  "license": "GPL-2.0"
+}

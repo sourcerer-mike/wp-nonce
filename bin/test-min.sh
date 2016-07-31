@@ -7,4 +7,8 @@ source $DIR/lib.sh
 
 trap 'exit $testStatus' INT TERM EXIT
 
+# This need to be a proper composer package.
 assert composer validate --strict
+
+# This shall have a README.md
+assert stat -c %a README.md

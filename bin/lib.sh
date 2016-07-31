@@ -9,7 +9,9 @@ testStatus=0
 # Assertion on commands
 #
 # Do assertion on commands which will increase the error code on failure.
-# The error code is stored in the $testStatus variable
+# The error code is stored in the $testStatus variable.
+# In addition the measured time is printed after each run
+# to let you know which test takes (too) long.
 #
 # Include this via `source lib.sh`.
 # Then add a `trap 'exit $testStatus' INT TERM EXIT` to your test file
@@ -18,7 +20,8 @@ testStatus=0
 function assert() {
     echo "$@"
     echo ""
-    "$@"
+    time "$@"
+    echo ""
 
     local status=$?
 

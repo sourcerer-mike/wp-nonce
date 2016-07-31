@@ -31,3 +31,6 @@ function assert() {
 
     testStatus+=${status}
 }
+
+# setup phpcs
+vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs/

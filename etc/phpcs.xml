@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ruleset name="Custom Standard">
+
+    <description>Mostly WordPress Coding Standards</description>
+
+    <file>./lib</file>
+
+    <exclude-pattern>*/Tests/*</exclude-pattern>
+
+    <rule ref="WordPress-VIP"/>
+
+    <rule ref="Generic.Files.LowercasedFilename.NotFound">
+        <!-- As of PSR-4 this will never happen. -->
+        <severity>0</severity>
+    </rule>
+
+</ruleset>

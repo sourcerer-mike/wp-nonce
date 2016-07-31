@@ -1,5 +1,13 @@
 {
   "name": "sourcerer-mike/wp-nonce",
   "description": "OOP solution for the wp_nonce_* functions.",
-  "license": "GPL-2.0"
+  "license": "GPL-2.0",
+  "autoload": {
+    "psr-4": {
+      "SourcererMike\\WP_Nonce\\": "lib/SourcererMike/WP_Nonce"
+    }
+  },
+  "require-dev": {
+    "wp-coding-standards/wpcs": "~0.9"
+  }
 }
